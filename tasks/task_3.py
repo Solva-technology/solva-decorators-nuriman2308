@@ -9,8 +9,3 @@ def validate_positive(func):
                 raise ValueError("Все аргументы должны быть положительными")
         return func(*args, **kwargs)
     return wrapper
-
-
-@validate_positive
-def multiply(a, b):
-    return a * b

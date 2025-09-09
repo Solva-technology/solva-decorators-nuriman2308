@@ -13,8 +13,3 @@ def simple_cache(func):
             cache[*args] = func(*args)
             return cache[*args]
     return wrapper
-
-
-@simple_cache
-def add(a, b):
-    return a + b

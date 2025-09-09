@@ -23,6 +23,7 @@ def log(func):
         return result
     return wrapper
 
+
 @log
 def add(a, b):
     return a + b
